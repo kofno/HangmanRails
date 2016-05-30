@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require reset
+ *= require pure
+ *= require_self
+ */
+
+#hangman {
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+}
+
+form.guess {
+  display: inline-block;
+}
+
+.error {
+  background-color: pink;
+  border: 1px solid red;
+  color: red;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.won {
+  background-color: lightgreen;
+  border: 1px solid darkgreen;
+  color: darkgreen;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.lost {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  color: #777;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.phrase-char {
+  font-size: 2em;
+}
+
+.guess {
+  font-size: 1.25em;
+}
+.guess.guessed {
+  color: #bbb;
+}
+
+#prefetch {
+  display: none;
+}
+

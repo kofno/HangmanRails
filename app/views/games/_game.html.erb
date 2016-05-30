@@ -1,0 +1,22 @@
+<div id="hangman">
+  <h1 class="header">Hangman</h1>
+  <div class="subheader">A game written in Ruby on Rails</div>
+  <hr />
+
+  <%= render @game.guesses %>
+  <%= render "games/gallows" %>
+  <%= render "games/gallows_prefetch" %>
+  <%= render @game.phrase_chars %>
+  <hr />
+
+  <% if flash[:error] %>
+    <div class="error">
+      <%= flash[:error] %>
+    </div>
+  <% end %>
+
+  <% if @game.over? %>
+    <%= render "games/over" %>
+  <% end %>
+
+</div>

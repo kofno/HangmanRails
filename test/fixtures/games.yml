@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_id: MyString
+  puzzle_id: 
+  guessed_letters: MyString
+  status: MyString
+
+two:
+  player_id: MyString
+  puzzle_id: 
+  guessed_letters: MyString
+  status: MyString

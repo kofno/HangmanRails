@@ -1,0 +1,4 @@
+<%= form_for [@game, guess], html: { class: guess_class(guess) } do |f| %>
+  <%= f.hidden_field :value, value: guess.value %>
+  <%= f.submit(guess.value, disabled: @game.over? || guess.guessed?) %>
+<% end %>

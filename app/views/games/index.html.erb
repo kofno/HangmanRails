@@ -1,0 +1,21 @@
+<div id="hangman">
+  <h1 class="header">Hangman</h1>
+  <div class="subheader">A game written in Ruby on Rails</div>
+  <hr />
+
+  <% if @games.present? %>
+    <p>You have some unfinished games: </p>
+    <ul>
+      <% @games.each do |game| %>
+        <li>
+          <%= link_to game do %>
+            <%= url_for game %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+    <hr/>
+  <% end %>
+
+  <%= render partial: "games/start_button", locals: { game: @game } %>
+</div>

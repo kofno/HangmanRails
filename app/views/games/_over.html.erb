@@ -1,0 +1,16 @@
+<% if @game.lost? %>
+  <div class="lost">
+    <strong>*Sad trombone*</strong>
+    Awww! Would you like to try again?
+  </div>
+<% end %>
+
+
+<% if @game.won? %>
+  <div class="won">
+    <strong>Great Game!</strong>
+    How about another?
+  </div>
+<% end %>
+
+<%= render partial: "games/start_button", locals: { game: Game.new } %>

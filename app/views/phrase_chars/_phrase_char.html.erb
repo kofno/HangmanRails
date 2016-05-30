@@ -1,0 +1,7 @@
+<span class="phrase-char">
+  <% if @game.over? %>
+    <%= phrase_char.letter.upcase.gsub(' ', "&nbsp; &nbsp;").html_safe %>
+  <% else %>
+    <%= phrase_char.masked.sub('*', "&nbsp;&#42;&nbsp;").html_safe %>
+  <% end %>
+</span>
