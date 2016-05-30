@@ -1,6 +1,9 @@
 <div id="hangman">
   <h1 class="header">Hangman</h1>
-  <div class="subheader">A game written in Ruby on Rails</div>
+  <div class="subheader">
+    A game written in Ruby on Rails
+    (<%= link_to "Source", "https://github.com/kofno/HangmanRails" %>)
+  </div>
   <hr />
 
   <%= render @game.guesses %>
